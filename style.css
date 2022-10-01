@@ -3,6 +3,14 @@ html, body {
     padding: 0;
     border: 0; 
     vertical-align: baseline;
+    width: 100vw;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 10% 1fr 10%;
+    grid-template-rows: 125px 30px 1500px 300px;
+    gap: 30px;
 }
 
 button:hover  {
@@ -10,10 +18,10 @@ button:hover  {
 }
   
 .header {
+    grid-area: 1 / 1 / 2 / 4;
     display: flex;
     justify-content:space-between;
-    align-items: center;
-    height: 125px;    
+    align-items: center; 
     background-color:  #466365;
 }
 
@@ -60,8 +68,8 @@ button:hover  {
 }
 
 .divider {
-    height: 45px;
-    width: 100vw;
+    grid-area: 2 / 1 / 2 / 4;
+    margin-top: -30px;
     background-color:  #A0B2A6;
     display: flex;
     justify-content: center;
@@ -109,18 +117,15 @@ nav a:hover {
 }
 
 .content {
-    width: 100vw;
-    background-color: whitesmoke;
-    padding: 10px 10px;
+    grid-column: 2 / 3;
     display: flex;
     flex-direction: column;
     align-items: center;
-
 }
 
 .banner {
-    width: 80%;
     height: 700px;
+    width: 100%;
     background-image: url("./images/Banner Image.jpg");    
     background-repeat: no-repeat;
     background-position:center;
@@ -128,6 +133,7 @@ nav a:hover {
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    margin-bottom: 2%;
 }
 
 .banner h2 {
@@ -159,7 +165,7 @@ nav a:hover {
     border-bottom-left-radius: 5%;
     padding-top: 2%;
     padding-bottom: 2%;
-    border: 1px white solid;
+    border: 3px white solid;
     visibility: hidden;
 }
 
@@ -206,16 +212,20 @@ nav a:hover {
     box-shadow: none;
     color: darkslategray;
     font-weight: bold;
-    border: 1px whitesmoke solid;
+    border: 2px whitesmoke solid;
     padding: 0.5rem 1rem;
-    border-radius: ;
+    border-radius: 5%;
 }
 
 .category {
     display: flex;
-    margin-top: 10px;
-    width: 1190px;
-    height: 600px;
+    flex-direction: column;
+    justify-content: center ;
+    align-items: center;
+    width: 100%;
+    height: 800px;
+    font-family: "Raleway";
+    color: #466365;
 }
 
 .products {
@@ -223,6 +233,8 @@ nav a:hover {
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
+    width: 1200px;
+    height: 80%;
 }
 
 .products p {
@@ -299,12 +311,13 @@ nav a:hover {
 }
 
 footer {
-    width: 100vw;
-    margin-left: 0%;
+    grid-area: 4 / 1 / 4 / 4;
     margin-top: 10px;
     padding-top: 10px;
     background-color:  #A0B2A6;
     display: flex;
+    justify-content: space-between;
+    align-items:center;
     font-family: Arial, Helvetica, sans-serif;
     color: whitesmoke;
 }
@@ -315,14 +328,10 @@ footer p {
 }
 
 .address {
-    justify-content: left;
-    font-weight: bold;
     width: 250px;
 }
 
 .copyright {
-    justify-content: right;
-    align-items:flex-end;
 }
 
 #clear {

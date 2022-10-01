@@ -9,18 +9,16 @@ button:hover  {
     cursor: pointer;
 }
   
-body {
-    background-color:  #466365;
-}
 .header {
     display: flex;
     justify-content:space-between;
     align-items: center;
-    height: 125px;
+    height: 125px;    
+    background-color:  #466365;
 }
 
 .logo {
-    margin-left: 50px;
+    margin-left: 5%;
     height: 75%;
     width: auto;
 }
@@ -47,6 +45,7 @@ body {
     width: 15%;
     display: flex;
     justify-content: space-around;
+    margin-right: 5%;
 }
 
 .icons span:hover {
@@ -207,6 +206,9 @@ nav a:hover {
     box-shadow: none;
     color: darkslategray;
     font-weight: bold;
+    border: 1px whitesmoke solid;
+    padding: 0.5rem 1rem;
+    border-radius: ;
 }
 
 .category {

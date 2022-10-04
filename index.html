@@ -17,31 +17,47 @@
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
     />
     <link rel="stylesheet" href="./style.css" />
+    <script
+      src="https://kit.fontawesome.com/4969b77458.js"
+      crossorigin="anonymous"
+    ></script>
     <title>BedsOnline.ie - Mattresses, Divan Beds, Bedding Linen</title>
   </head>
   <body>
-    <div class = "container">    
+    <div class="container">
       <section class="header">
         <div class="logo">
-          <img src="/images/BedsOnline-Logo-2.png" alt="Logo" />
+          <img
+            src="/images/BedsOnline-Logo-v2-3.png"
+            alt="Logo"
+            title="Beds Online Logo"
+          />
         </div>
         <nav>
           <ul>
-            <a>Mattresses</a>
-            <a>Divan Beds</a>
-            <a>Pillows</a>
-            <a>Duvets</a>
-            <a>Bedding</a>
-            <a id="clear">Clearance</a>
+            <a title="Shop Mattresses">Mattresses</a>
+            <a title="Shop Divan Beds">Divan Beds</a>
+            <a title="Shop Pillows">Pillows</a>
+            <a title="Shop Duvets">Duvets</a>
+            <a title="Shop Bedding">Bedding</a>
+            <a title="Shop Clearance" id="clear">Clearance</a>
           </ul>
         </nav>
         <div class="icons">
           <input type="text" name="search" id="search-bar" value="Search..." />
-          <span class="material-symbols-outlined" id="search"> search </span>
-          <span class="material-symbols-outlined"> favorite </span>
-          <span class="material-symbols-outlined" id="basket">
-            shopping_basket
-          </span>
+          <a href="#" title="Search"
+            ><span class="material-symbols-outlined" id="search">
+              search
+            </span></a
+          >
+          <a href="#" title="Wishlist"
+            ><span class="material-symbols-outlined"> favorite </span></a
+          >
+          <a href="#" title="Shopping basket">
+            <span class="material-symbols-outlined" id="basket">
+              shopping_basket
+            </span>
+          </a>
         </div>
       </section>
       <section class="divider">
@@ -74,9 +90,10 @@
               </div>
             </div>
             <p id="promo-text">your first order!</p>
-            <button>Shop Now</button>
+            <button title="Shop Now">SHOP NOW</button>
           </div>
         </div>
+        <div class="line"></div>
         <div class="category">
           <h2>Shop by Category</h2>
           <div class="products">
@@ -100,13 +117,46 @@
         </div>
       </section>
       <footer>
-        <p class="address">
-          Unit 9, Greenhills Business Park, Greenhills Road, Dublin, D24VF99,
-          Ireland
-        </p>
-        <p class="copyright">&copy; Copyright 2022</p>
+        <div id="f-address">
+          <img src="./images/BedsOnline-Logo-2.png" alt="Beds Online Logo" />
+          <p>Unit 9, Greenhills Business Park,</p>
+          <p>Greenhills Road, Dublin,</p>
+          <p>D24VF99, Ireland</p>
+          <!--Social Media Icons / links?-->
+        </div>
+        <div id="f-contact">
+          <h2 class="f-title">Contact Us</h2>
+          <p>01 - 4626425</p>
+          <p>Mon-Fri: 9:30am - 5:30pm</p>
+          <p>sales@bedsonline.ie</p>
+          <div id="social">
+            <i class="fa-brands fa-facebook" title="Facebook"></i>
+            <i class="fa-brands fa-instagram" title="Instagram"></i>
+            <i class="fa-brands fa-twitter" title="Twitter"></i>
+          </div>
+        </div>
+        <div id="f-link">
+          <h2 class="f-title">Useful Links</h2>
+          <ul>
+            <a href="">About Us</a>
+            <a href="">Contact Us</a>
+            <a href="">Delivery</a>
+            <a href="">FAQs</a>
+            <a href="">GDPR</a>
+          </ul>
+        </div>
+        <div class="line" id="f-line"></div>
+        <div id="company">
+          <p>&copy;2022 Vico Distribution Ltd.</p>
+        </div>
+        <p id="VAT">VAT Reg: 8252462R</p>
+        <ul id="links">
+          <a href="">Terms & Conditions</a>
+          <a href="">Privacy Policy</a>
+          <a href="">Sitemap</a>
+        </ul>
       </footer>
-  </div>
+    </div>
     <script src="./main.js"></script>
   </body>
 </html>

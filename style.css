@@ -42,6 +42,10 @@ button:hover  {
     max-height: 100px;
 }
 
+.header a  {
+    text-decoration: none;
+}
+
 .material-symbols-outlined  {
   font-variation-settings:
   'FILL' 0,

@@ -1,4 +1,4 @@
-/*CSS for Product Pages*/
+/*CSS for Cat Pages*/
 html, body {
     margin: 0;
     padding: 0;
@@ -10,7 +10,7 @@ html, body {
 .container {
     display: grid;
     grid-template-columns: 10% 1fr 10%;
-    grid-template-rows: 100px 20px 1000px 200px 400px;
+    grid-template-rows: 100px 20px 1200px 400px;
     gap: 30px;
 }
 
@@ -22,6 +22,7 @@ button:hover  {
     width: 100%;
     border-bottom: 1px lightgrey solid;
     opacity: .9;
+    margin-top: 1rem;
 }
 
 /*Header*/
@@ -136,13 +137,7 @@ nav a:hover {
     color: #F7934C;
 }
 
-#p-content {
-    grid-area: 3 / 2 / 4 / 3;
-    display: grid;
-    grid-template-columns: 55% 45%;
-    grid-template-rows: 20px 600px 350px;
-    gap: 25px;
-}
+/*Breadcrumbs*/
 
 #breadcrumbs {
     grid-area: 1 / 1 / 2/ 3;
@@ -178,249 +173,104 @@ nav a:hover {
     font-weight: bold;
 }
 
+/*content*/
 
-/*Product Display Section*/
-
-/*.product {
-    margin-top: 30px;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    height: 600px;
-}*/
-.p-images {
-    grid-area: 2 / 1 / 3 / 2;
-    height: 600px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-.p-sale {
-    grid-area: 2 / 2 / 4 / 3;
-}
-
-.sidebar   {
-    width: 85%;
-    height: 100%;
-    margin-left: 15%;
-}
-
-#p-sale-box {
-    border-radius: 1%;
-    background-color: #A0B2A6;
-    opacity: .9;
-    height: 400px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    position: sticky;
-    top: 10%;
-}
-
-#prod-img {
-    background-image: url(./images/Banner\ Image.jpg);    
-    background-repeat: no-repeat;
-    background-position:center;
-    background-size: cover;
-    height: 80%;
-    border-radius: 1%;
-}
-
-#thumb-container {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    height: 18%;
-}
-
-.thumbnails{
-    width: 18%;
-    height: 100%;
-    border-radius: 5%;    
-    margin-right: 1rem;
-    background-repeat: no-repeat;
-    background-position:center;
-    background-size: cover;
-}
-
-#thumb-1 {
-    background-image: url(./images/Banner\ Image.jpg);
-}
-
-#thumb-2 {
-    background-image: url(./images/thumb-bed-1.jpg);
-}
-
-#thumb-3 {
-    background-image: url(./images/thumb-bed-2.jpg);
-}
-
-/*Purchasing Section*/
-
-#text {
+#page {
+    grid-area: 3 / 2 / 4 / 3;
     font-family: "Raleway";
-    color: whitesmoke;
-}
-
-#text h1 {
-    font-size: 1.75rem;
-}
-
-#price {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
 }
 
-#shipping {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    width: 80%;
+.description {
+    padding-left: 2rem;
+    padding-bottom: 2rem;
+    margin-right: 30%;
 }
 
-#collection {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    width: 80%;
-    
-}
-#text span {
-    color: #466365;
-}
-
-#buttons {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    width: 50%;
-    height: 40%;
-}
-
-#add-basket {
-    border: none;
-    color: whitesmoke;
-    background-color: #466365;
-    font-size: 1.2rem;
-    height: 35%;
-}
-
-#size {
-    display: flex;
-    width: 80%;
-    justify-content: space-around;
-}
-
-#size label {
-    font-family: "Raleway";
-    color: whitesmoke;
-}
-
-/* Description Section */
-.details {
-    grid-area: 3 / 1 / 4 / 4;
-    height: 350px;
-    width: 55%;
-    margin-top: 30px;
-}
-
-#head-tag {
-    width: 50%;
-    height: 10%;
-    display: flex;
-    justify-content: space-between;
-    font-family: "raleway";
-}
-.h-tag {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 47.5%;
-    height: 98%;
-    border-top-left-radius: 5%;
-    border-top-right-radius: 5%;    
-    border: 2px #466365 solid;
-}
-#h-details {
-    background-color: #466365;
-    color: whitesmoke;
-}
-#h-reviews {
-    color: #466365;
-}
-
-#content {
-    height: 90%;
-    margin-top: 1px;
-    
-}
-.content-box {
-    border: 2px #466365 solid;    
-    height: 90%;
-    border-top-right-radius: 1%;
-    border-bottom-right-radius: 1%;
-    border-bottom-left-radius: 1%;
-}
-.c-text {
-    padding: 1.5rem 3rem 0rem 3rem;
+.description p {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: justify;
 }
 
-#c-subhead{
-    padding-left: 2.5rem;
+.content {
+
 }
 
-
-#c-reviews {
-    visibility: hidden;
+#product-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px lightgrey solid;
+    border-top: 1px lightgrey solid;
+    background-color:#A0B2A6;
+    padding-left: 1rem;
+    color: whitesmoke;
+    border-radius: 1%;
+}
+#sort {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 20%;
+    height: 30px;
 }
 
-.recommended {
-    height: 400px;
+#product-container {
+    display: grid;
+    margin-top: 30px;
+    grid-template-columns: 1fr 3fr;
+    gap: 20px;
+    padding-bottom: 30px;
+    border-bottom: 1px lightgrey solid;
+}
+#filter {
+    grid-area: 1 / 1 / 2 / 2;
+    border: 1px lightgrey solid;
     display: flex;
     flex-direction: column;
-    margin-top: 40px;
-    border-top: 1px lightgrey solid;
-    grid-area: 4 / 2 / 5 / 3;
+    padding: 2rem ;
+    border-radius: 5%;
 }
 
-.recommended h2 {
-    font-family: "Raleway";
+#filter h2 {
+    margin-top: 0%;
+    text-decoration: underline;
     color: #466365;
 }
 
-#related-box {
-    display: flex;
-    justify-content: space-around;
-    height : 80%;
-}
-
-.related {
-    width: 25%;
-    height: 100%; 
+.filter-by  {
     display: flex;
     flex-direction: column;
 }
 
-.related img {
+#products {
+    grid-column:  2 / 3;
+    display: flex;
+    justify-content: space-around;
+}
+
+.product {
+    width: 30%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.product img {
     width: 100%;
     border-bottom: 1px lightgrey solid; 
     padding-bottom: 0.5rem;
 }
 
-.related h3, h4 {
-    color: #466365;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 0.5rem;
+#speciciations {
+    padding-left: 2rem;
+    padding-bottom: 2rem;
+    margin-right: 30%;
+    margin-top: 40px;
 }
 
 /*Footer*/
 
 footer {
-    grid-area: 5 / 1 / 6 / 4;
+    grid-area: 4 / 1 / 5 / 4;
     padding-top: 2%;
     background-color:#466365;
     font-family: Arial, Helvetica, sans-serif;

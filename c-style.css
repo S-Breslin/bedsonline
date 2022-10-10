@@ -261,6 +261,11 @@ nav a:hover {
     padding-bottom: 0.5rem;
 }
 
+.product a {
+    text-decoration: none;
+    color: black;
+}
+
 #speciciations {
     padding-left: 2rem;
     padding-bottom: 2rem;

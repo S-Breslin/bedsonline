@@ -115,6 +115,7 @@ nav a {
     padding-right: 10px;
     }
 
+
 nav a + a::before {
     content: "|";
     padding-right: 10px;
@@ -260,9 +261,9 @@ nav a:hover {
     height: 80%;
 }
 
-@media only screen and (max-width: 1864px) and (min-height: 700px) {
+@media only screen and (max-width: 1564px) and (min-height: 900px) {
     .container {
-        grid-template-rows: 100px 20px 1800px 400px;
+        grid-template-rows: 100px 20px 1700px 400px;
     }
     
 }
@@ -284,6 +285,12 @@ nav a:hover {
     }
 }
 
+.category h2 {
+    
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+
 .products p {
     color: whitesmoke;
     font-family: "Raleway";
@@ -292,8 +299,11 @@ nav a:hover {
 }
 
 .cat{
-    width: 350px;
-    height: 250px;
+    width: 30%;
+    height: 100%;
+    max-width: 350px;
+    min-width: 250px;
+    max-height: 250px;
     background-repeat: no-repeat;
     background-position:center;
     background-size: cover;
@@ -339,21 +349,16 @@ nav a:hover {
     background-image: url("./images/cat-images/bedding.jpg");
 }
 
-.clearance {
-    width: 350px;
-    height: 250px;
+#clearance {
     background-color: #F7934C;
-    display: flex;
-    justify-content: center;
     align-items: center;
-    border-radius: 5%;
 }
 
-.clearance p {
+#clearance p {
     font-size: 3rem;
 }
 
-.clearance:hover {
+#clearance:hover {
     font-weight: bold;
     cursor: pointer;
 }

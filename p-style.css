@@ -342,6 +342,7 @@ nav a:hover {
     border-top-left-radius: 5%;
     border-top-right-radius: 5%;    
     border: 2px #466365 solid;
+    cursor: pointer;
 }
 #h-details {
     background-color: #466365;
@@ -375,7 +376,13 @@ nav a:hover {
 
 
 #c-reviews {
-    visibility: hidden;
+    display: none;
+}
+
+#star {
+    color: gold;
+    font-weight: 900;
+    font-variation-settings: 'FILL' 1;
 }
 
 .recommended {

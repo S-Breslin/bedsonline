@@ -18,13 +18,13 @@ searchButton.onclick = showSearch;
 
 document.body.ondblclick = hideSearch;
 
-// Promo timer 
+/* Promo timer 
 
 let promo = document.getElementById('promo');
 
 setTimeout(function(){
     promo.style.visibility = 'visible';
-},  2000);
+},  2000);*/
 
 // Category hover states
 
@@ -92,4 +92,6 @@ let hideBeddingBan = () => {
 
 beddingButton.onmouseenter = showBeddingBan;
 beddingButton.onmouseleave = hideBeddingBan;
+
+// Product page
 

@@ -146,6 +146,7 @@ nav a:hover {
 .banner {
     height: 70vh;
     width: 100%;
+    max-width: 1500px;
     background-image: url("./images/Banner Image.jpg");    
     background-repeat: no-repeat;
     background-position:center;
@@ -248,6 +249,7 @@ nav a:hover {
     justify-content: center ;
     align-items: center;
     width: 100%;
+    max-width: 2000px;
     font-family: "Raleway";
     color: #466365;
 }
@@ -255,34 +257,18 @@ nav a:hover {
 .products {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
     align-items: center;
-    width: 80%;
+    justify-content: center;
+    width: 90%;
+    max-width: 1500px;
     height: 80%;
 }
 
-@media only screen and (max-width: 1564px) and (min-height: 900px) {
+@media only screen and (max-width: 1410px)  {
     .container {
         grid-template-rows: 100px 20px 1700px 400px;
     }
     
-}
-@media only screen and (min-height: 1150px) {
-    .container {
-        grid-template-rows: 100px 20px 2000px 400px;
-    }
-}
-
-@media only screen and (min-height: 1450px) {
-    .container {
-        grid-template-rows: 100px 20px 2200px 400px;
-    }
-}
-
-@media only screen and (min-height: 1850px) {
-    .container {
-        grid-template-rows: 100px 20px 2400px 400px;
-    }
 }
 
 .category h2 {

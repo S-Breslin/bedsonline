@@ -27,6 +27,35 @@ button:hover  {
     background-color:  #466365;
 }
 
+.sidebar {
+    width: 0%;
+    color: whitesmoke;
+    font-size: 24px;
+    margin-left: 5%;
+    display: none;
+    width: 25%;
+    z-index: 10;
+}
+
+@media only screen and (max-width: 1292px) {
+    nav a {
+        display: none;
+        
+    }
+
+    .sidebar {
+        display: block;
+    }
+    .sidebar:hover {
+        cursor: pointer;
+        font-size: 26px;
+    }
+    .icons {
+        width: 25%;
+    }
+    
+}
+
 .logo {
     margin-left: 5%;
     height: 75%;
@@ -88,6 +117,63 @@ button:hover  {
     justify-content: center;
 }
 
+menu {
+    width: 25%;
+    height: 100%;
+    background-color: #A0B2A6;
+    z-index: 5;
+    padding-bottom: 5%;
+    margin-top: -80px;
+    border-right: 3px #466365 solid;
+    border-bottom: 3px #466365 solid;
+    display: none;
+    opacity: 0.95;
+    position: absolute;
+    left: 0;
+}
+
+#close {
+    color: #466365;
+    font-family: "Raleway";
+    text-align: right;
+    margin-right: 7.5%;
+    margin-top: 5%;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    cursor: pointer;
+}
+
+menu ul {
+    height: 75%;
+    margin-top: 0%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 25px;
+}
+
+menu a {
+    color: whitesmoke;
+    margin-left: 0%;
+    text-align: left;
+    font-family: "Raleway";
+    font-weight: bold;
+    text-decoration: none;
+    border-bottom: 1px lightgrey solid;
+    width: 80%;
+    padding-bottom: 1rem;
+    overflow: ;
+}
+
+#m-last {
+}
+
+.m-help {
+    color: whitesmoke;
+    width: 80%;
+    font-family: "EB Garamond";
+}
+
 .services {
     color: whitesmoke;
     font-family: Arial, Helvetica, sans-serif;
@@ -111,7 +197,7 @@ nav {
 nav a {
     color: whitesmoke;
     font-family: "Raleway";
-    font-size: 22px;
+    font-size: 21px;
     padding-right: 10px;
     }
 

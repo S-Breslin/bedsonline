@@ -18,6 +18,28 @@ searchButton.onclick = showSearch;
 
 document.body.ondblclick = hideSearch;
 
+/*Display Menu*/
+
+
+let mButton = document.getElementById("bars");
+let mClose = document.getElementById("close");
+let contain = document.body;
+
+let menu = document.getElementById("menu");
+
+let showMenu = () => {
+    menu.style.display = 'block';
+    contain.style.overflow = "hidden";    
+}
+
+let hideMenu = () => {{
+    menu.style.display = 'none';
+    contain.style.overflow = "auto";
+}}
+
+mButton.onclick = showMenu;
+mClose.onclick = hideMenu;
+
 /* Promo timer 
 
 let promo = document.getElementById('promo');

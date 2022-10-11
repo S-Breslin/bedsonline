@@ -24,18 +24,20 @@ document.body.ondblclick = hideSearch;
 let mButton = document.getElementById("bars");
 let mClose = document.getElementById("close");
 let contain = document.body;
-
+let overlay = document.getElementById("overlay");
 let menu = document.getElementById("menu");
 
 let showMenu = () => {
     menu.style.display = 'block';
-    contain.style.overflow = "hidden";    
+    contain.style.overflow = "hidden"; 
+    overlay.style.display = 'block';   
 }
 
-let hideMenu = () => {{
+let hideMenu = () => {
     menu.style.display = 'none';
     contain.style.overflow = "auto";
-}}
+    overlay.style.display = 'none';
+}
 
 mButton.onclick = showMenu;
 mClose.onclick = hideMenu;
